@@ -7,6 +7,8 @@ files:
     overwrite: yes
 
 hooks:
+  Before:
+    -location: scripts/install.sh
   BeforeInstall:
     - location: scripts/stop_apache.sh
       runas: root
